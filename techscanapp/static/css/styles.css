@@ -1,0 +1,31 @@
+nav a {
+	font-size: 30px !important;
+    font-weight: bolder;
+    font-variant-caps: petite-caps;
+}
+.card .card-header {
+    padding: 1rem;
+    color: white !important;
+    background: #0c7c8a;
+}
+a:hover {
+	text-decoration: none !important;
+}
+.category-header {
+	text-overflow: ellipsis;width: 100%;overflow: hidden;word-wrap: initial;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.sidebar {
+    background: #ddd;
+    height: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    min-height: 560px;
+    box-shadow: 1px 1px 2px 2px #aaa;
+}

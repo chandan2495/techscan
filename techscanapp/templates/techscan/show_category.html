@@ -1,0 +1,21 @@
+{% include 'techscan/header.html' %}
+<div class="container category">
+	<div class="row">		
+		{% for repository in data %}
+			<div class="card text-white bg-primary mb-4" style="min-width: 30rem;max-width: 30rem; margin: 15px">
+			  <div class="card-header" style="color:#333;font-size: 15px; max-height: 50px;">
+			  	<span class="col-lg-7 pull-left category-header" title="{{ repository.full_name }}"> {{ repository.full_name }} </span>
+			  	<span class="pull-right col-lg-5"  style="color:gold">
+			  		<span class="glyphicon glyphicon-star"></span>
+			  		{{ repository.stargazers_count }}
+			  	</span>
+			  </div>
+			  <div class="card-body" style="font-size: 18px;background: #eee;color: #333">
+			    <h4 class="card-title">{{ repository.description }}</h4>
+			    <a class="card-text" href="/techscan/author/{{ repository.author_id }}"> Show Author Profile</a>
+			  </div>
+			</div>
+		{% endfor %}
+	</div>	
+</div>
+{% include 'techscan/footer.html' %}
